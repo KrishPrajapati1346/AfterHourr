@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">AfterHour</h1>
-<h3 align="center">AI‑Powered Urban Food Rescue & Logistics Platform</h3>
+<h3 align="center">Urban Food Rescue & Logistics Platform</h3>
 
 <p align="center">
   <em>Redistributing surplus food from restaurants and hotels to NGOs and shelters through real‑time dispatch and intelligent routing.</em>
@@ -70,7 +70,7 @@
 | 2 | 👥 **Role‑Based Dashboards** | Tailored views for Donor, NGO, Driver, and Admin. |
 | 3 | 🗺️ **Live Map (Leaflet + CartoDB)** | Real‑time markers for all participants with dark/light tile switching. |
 | 4 | 📦 **Food Listing CRUD** | Donors create listings; NGOs claim; drivers accept for delivery. |
-| 5 | 🤖 **AI‑Powered Parsing** | Google Gemini AI parses natural‑language food descriptions into structured data. |
+| 5 | 🤖 **Smart Parsing** | Uses LLMs (Llama 3.1 / GPT) to parse natural‑language food descriptions into structured data. |
 | 6 | 🚗 **Delivery Routing** | Polyline route from pickup → drop‑off visible to all parties. |
 | 7 | ⚡ **Real‑time Updates** | Socket.io pushes listing status, driver location, and notifications instantly. |
 | 8 | 📊 **Analytics Dashboard** | Impact metrics (meals saved, CO₂ reduced) with Recharts visualizations. |
@@ -109,7 +109,7 @@ graph TB
     subgraph External["🌐 External Services"]
         P[Google OAuth 2.0]
         Q[CartoDB Tile Server]
-        R[Google Gemini AI]
+        R[Groq / OpenAI API]
     end
 
     Client <-->|REST API| Server
@@ -154,7 +154,8 @@ graph TB
 | ![bcrypt](https://img.shields.io/badge/bcryptjs-2.4-003B57?style=flat-square&logo=letsencrypt&logoColor=white) | Password hashing (12 salt rounds) |
 | ![Helmet](https://img.shields.io/badge/Helmet-7-333333?style=flat-square&logo=helmet&logoColor=white) | HTTP security headers |
 | ![Google Auth Library](https://img.shields.io/badge/google--auth--library-10-4285F4?style=flat-square&logo=google&logoColor=white) | Server‑side OAuth verification |
-| ![Gemini AI](https://img.shields.io/badge/Google_Gemini-AI-8E75B2?style=flat-square&logo=googlegemini&logoColor=white) | AI food description parsing |
+| ![Groq](https://img.shields.io/badge/Groq-Llama_3.1-f55036?style=flat-square) | Fast LLM inference for food parsing |
+| ![OpenAI](https://img.shields.io/badge/OpenAI-API-412991?style=flat-square&logo=openai&logoColor=white) | Fallback LLM processing |
 | ![Morgan](https://img.shields.io/badge/Morgan-1.10-2D3748?style=flat-square&logo=node.js&logoColor=white) | HTTP request logging |
 | ![Express Validator](https://img.shields.io/badge/Express_Validator-7-E8E8E8?style=flat-square&logo=express&logoColor=black) | Input validation |
 | ![Express Rate Limit](https://img.shields.io/badge/Rate_Limiter-7-FF6B6B?style=flat-square&logo=express&logoColor=white) | API rate limiting |
@@ -638,6 +639,6 @@ This project is licensed under the **MIT License**.
 
 <p align="center">
   <img src="https://img.shields.io/badge/Made_with-MERN_Stack-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="Made with MERN" />
-  <img src="https://img.shields.io/badge/Powered_by-Google_Gemini_AI-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Powered by Gemini" />
+  <img src="https://img.shields.io/badge/Powered_by-Groq_&_OpenAI-f55036?style=for-the-badge" alt="Powered by LLMs" />
   <img src="https://img.shields.io/badge/Maps_by-CartoDB_+_Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white" alt="Maps by Leaflet" />
 </p>

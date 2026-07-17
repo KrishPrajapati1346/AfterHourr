@@ -67,7 +67,7 @@
 | # | Feature | Description |
 |---|---------|-------------|
 | 1 | 🔐 **Dual Authentication** | Email/password + Google OAuth with JWT sessions. |
-| 2 | 👥 **Role‑Based Dashboards** | Tailored views for Donor, NGO, Driver, and Admin. |
+| 2 | 👥 **Role‑Based Dashboards** | Tailored views for Donor, NGO, and Driver. |
 | 3 | 🗺️ **Live Map (Leaflet + CartoDB)** | Real‑time markers for all participants with dark/light tile switching. |
 | 4 | 📦 **Food Listing CRUD** | Donors create listings; NGOs claim; drivers accept for delivery. |
 | 5 | 🤖 **Smart Parsing** | Uses LLMs (Llama 3.1 / GPT) to parse natural‑language food descriptions into structured data. |
@@ -252,7 +252,7 @@ erDiagram
         String name
         String email UK
         String password
-        String role "donor | ngo | driver | admin"
+        String role "donor | ngo | driver"
         String phone
         Point location "2dsphere indexed"
         String address
@@ -495,7 +495,7 @@ stateDiagram-v2
 | ![Donor](https://img.shields.io/badge/🧑‍🍳_Donor-4CAF50?style=flat-square) | Control Center | AI food logging, listing management, impact metrics, live tracking |
 | ![NGO](https://img.shields.io/badge/🏢_NGO-2196F3?style=flat-square) | Resource Hub | Nearby donations feed, one‑click claim, capacity management |
 | ![Driver](https://img.shields.io/badge/🚗_Driver-FF9800?style=flat-square) | Dispatch | Route timeline, pickup verification, delivery history |
-| ![Admin](https://img.shields.io/badge/🛡️_Admin-9C27B0?style=flat-square) | Admin Panel | User management, listing oversight, system analytics |
+
 
 ---
 

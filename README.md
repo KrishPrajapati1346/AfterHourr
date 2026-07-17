@@ -216,9 +216,6 @@ AfterHourr/
 │       │   │   ├── FloatingDock.jsx     # Floating action bar
 │       │   │   ├── AddressAutocomplete.jsx  # Location picker
 │       │   │   └── LoadingState.jsx     # Loading skeleton
-│       │   ├── donor/            # Donor‑specific components
-│       │   ├── ngo/              # NGO‑specific components
-│       │   └── driver/           # Driver‑specific components
 │       ├── context/
 │       │   ├── AuthContext.jsx   # Auth state + Google OAuth
 │       │   ├── SocketContext.jsx # Socket.io connection
